@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAVN | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main-wrapper" id="mainWrapper">
+        <div class="navcontainer">
+            <div class="logo">
+                <div>KAVN</div>
+                <p class="slogan">Future To People</p>
+            </div>
+            <nav>
+
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav">Home</a></li>
+                    <li><a href="login/index.php" class="nav">Playground</a></li>
+                    <li><a href="downloads.html" class="active nav">Downloads</a></li>
+                    <li><a href="#" class="nav">About KAVN</a></li>
+                    <li><a href="#" class="nav">Support</a></li>
+                </ul>
+                <div class="navlogo" onclick="toggleNav()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+
+        <main>
+            <div class="final-app-container final-app-backdrop">
+                <div class="final-app-overlay"></div>
+
+                <div class="final-app-grid">
+                    <div class="final-app-info">
+                        <div class="final-app-header">
+                            <div class="final-app-icon">X</div>
+                            <div>
+                                <h1 class="final-app-title">App 1: KAVN Monkeys</h1>
+                                <p class="final-app-developer">by &nbsp;KAVN Team</p>
+                            </div>
+                        </div>
+
+                        <div class="final-app-rating">
+                            <div class="ranking-stars"></div>
+                            <div class="final-app-stats">4.4 ★ • 38K reviews</div>
+                        </div>
+
+                        <div class="final-app-tags">
+                            <span class="app-tag">Sound</span>
+                            <span class="app-tag">Design</span>
+                            <span class="app-tag">Apps</span>
+                            <span class="app-tag">UI/UX</span>
+                        </div>
+
+                        <p class="final-app-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum officia eos inventore quasi
+                            eius excepturi culpa earum, voluptatibus recusandae commodi maxime ut, impedit et? Rem harum
+                            obcaecati error ad ut dolores aspernatur voluptate, vel a, modi eius perferendis nam
+                            temporibus tenetur aliquid et aut itaque fuga dolor mollitia? Dolorum, temporibus.
+                        </p>
+
+                        <div class="download-container">
+                            <button class="download-btn download-primary">Download</button>
+                        </div>
+                    </div>
+
+                    <div class="screenshot-visuals">
+                        <div class="screenshot-slider">
+                            <div class="screenshot-carousel" id="screenshotCarousel">
+                                <div class="screenshot-frame">
+                                    <img src="https://placehold.co/600x400" alt="Bild 1">
+                                </div>
+                                <div class="screenshot-frame">
+                                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=400&fit=crop"
+                                        alt="Bild 2">
+                                </div>
+                                <div class="screenshot-frame">
+                                    <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=400&fit=crop"
+                                        alt="Bild 3">
+                                </div>
+                                <div class="screenshot-frame">
+                                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&h=400&fit=crop"
+                                        alt="Bild 4">
+                                </div>
+                                <div class="screenshot-frame">
+                                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=400&fit=crop"
+                                        alt="Bild 5">
+                                </div>
+                            </div>
+
+                            <button class="final-app-carousel-arrows final-app-carousel-left"
+                                onclick="galacticSlide(-1)">‹</button>
+                            <button class="final-app-carousel-arrows final-app-carousel-right"
+                                onclick="galacticSlide(1)">›</button>
+
+                            <div class="final-app-carousel">
+                                <div class="final-app-dot active" onclick="teleportToSlide(0)"></div>
+                                <div class="final-app-dot" onclick="teleportToSlide(1)"></div>
+                                <div class="final-app-dot" onclick="teleportToSlide(2)"></div>
+                                <div class="final-app-dot" onclick="teleportToSlide(3)"></div>
+                                <div class="final-app-dot" onclick="teleportToSlide(4)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="final-app-feature-grid">
+                    <div class="app-feature">
+                        <span class="icon">📜</span>
+                        <span class="label">Surface</span>
+                    </div>
+                    <div class="app-feature">
+                        <span class="icon">🌍</span>
+                        <span class="label">Windows 8+</span>
+                    </div>
+                    <div class="app-feature">
+                        <span class="icon">🏳️‍⚧️</span>
+                        <span class="label">LGBTQ Support</span>
+                    </div>
+                    <div class="app-feature">
+                        <span class="icon">👥</span>
+                        <span class="label">Multiplayer</span>
+                    </div>
+                    <div class="app-feature">
+                        <span class="icon">🔒</span>
+                        <span class="label">Secure</span>
+                    </div>
+                    <div class="app-feature">
+                        <span class="icon">⚡</span>
+                        <span class="label">High Performance</span>
+                    </div>
+                </div>
+
+                <div class="compatibility-box">
+                    <h2 class="compatibility-title">Compatibility Check:</h2>
+                    <ul class="compatibility-description">
+                        <li>Aspect Number 1</li>
+                        <li>Aspect Number 2</li>
+                        <li>Aspect Number 3</li>
+                        <li>Aspect Number 4</li>
+                        <li>Aspect Number 5</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    </div>
+
+</body>
+
+</html>
